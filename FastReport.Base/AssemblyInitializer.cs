@@ -2,6 +2,7 @@
 using FastReport.Data;
 using FastReport.Table;
 using FastReport.Export.Image;
+using FastReport.Export.Json;
 using FastReport.Barcode;
 using FastReport.Matrix;
 using FastReport.CrossView;
@@ -145,6 +146,7 @@ namespace FastReport
 
             // exports
             RegisteredObjects.InternalAddExport(typeof(ImageExport), "Image", "Export,Image,File");
+            RegisteredObjects.InternalAddExport(typeof(JsonExport), "Json", "Export,Json");
 
             // functions
             StdFunctions.Register();
